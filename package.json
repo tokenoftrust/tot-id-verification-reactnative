@@ -1,0 +1,31 @@
+{
+  "name": "tot-id-verification-reactnative",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/dev-server": "0.5.5",
+    "@expo/metro-runtime": "~3.2.1",
+    "expo": "^51.0.26",
+    "expo-av": "~14.0.6",
+    "expo-camera": "~15.0.14",
+    "expo-cli": "^6.3.10",
+    "expo-crypto": "^13.0.2",
+    "expo-image-picker": "^15.0.7",
+    "expo-secure-store": "~13.0.2",
+    "expo-status-bar": "~1.12.1",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-web": "~0.19.10",
+    "react-native-webview": "13.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

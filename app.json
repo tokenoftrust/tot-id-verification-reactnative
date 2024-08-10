@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "tot-id-verification-reactnative",
+    "slug": "tot-id-verification-reactnative",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "entryPoint": "./App.js",
+    "icon": "./assets/logo_TokenOfTrust_symbol_gradBkg.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires access to the camera.",
+        "NSMicrophoneUsageDescription": "This app requires access to the microphone.",
+        "UIBackgroundModes": [
+          "audio",
+          "fetch"
+        ],
+        "allowsInlineMediaPlayback": true
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "FOREGROUND_SERVICE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ]
+  }
+}
