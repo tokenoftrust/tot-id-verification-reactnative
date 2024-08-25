@@ -1,5 +1,6 @@
 // src/utils/api.js
 import * as SecureStore from 'expo-secure-store';
+import {Alert} from 'react-native';
 
 import { APP_DOMAIN, TOT_API_KEY, TOT_SECRET_KEY } from '../../.env.json';
 

@@ -67,6 +67,12 @@ This should also work:
    npx expo start -c
    ```
 
+4. The web version... not currently supported. 
+
+Is not currently supported for two reasons:
+1. React-native doesn't support webviews.
+2. CORS limitations with our current API.
+
 ### Key Features
 
 - **Email Management**: The app remembers the last three email addresses used for verification, along with their associated verification URLs and timestamps. It allows users to select one of these emails or enter a new one which is intended to help developers to move between new verifications and back to old ones to see how Token of Trust handles in progress verifications.
