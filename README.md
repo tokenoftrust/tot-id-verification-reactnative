@@ -27,14 +27,17 @@ This project demonstrates how to integrate the [**Token of Trust**](https://www.
 
 - **Node.js** and **npm/yarn** installed.
 - **Expo CLI** installed globally (`npm install -g expo-cli`).
-- A registered [**Token of Trust**](https://www.tokenoftrust.com/hq/register) account to obtain the necessary API keys. You can get a trial license.
+- A registered [**Token of Trust**](https://app.tokenoftrust.com/hq/register) account to obtain the necessary API keys. You can get a trial license.
+- **Expo on iOS or Expo Go on Android** must be installed to recognize the QR code.
+ 
+Note: The iOS simulator camera didn't work for us so we highly recommend that you use native devices but please do give us feedback in terms of what worked for you.
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/token-of-trust-webview.git
-   cd token-of-trust-webview
+   git clone https://github.com/tokenoftrust/tot-id-verification-reactnative
+   cd tot-id-verification-reactnative
    ```
 
 2. Install dependencies:
@@ -42,9 +45,11 @@ This project demonstrates how to integrate the [**Token of Trust**](https://www.
    npm install
    ```
 
-   3. Configure environment variables:
-       - Copy `template.env.json` to `.env.json`.
-   - Update `.env.json` with your [**Token of Trust API Keys**](https://app.tokenoftrust.com/hq/guides/integration) which you can find by checking the integrations tab within [Token of Trust HQ](https://app.tokenoftrust.com/hq):
+3. Configure environment variables:
+   
+    - Copy `template.env.json` to `.env.json`.
+    - Update `.env.json` with your [**Token of Trust API Keys**](https://app.tokenoftrust.com/hq/guides/integration) which you can find by checking the integrations tab within [Token of Trust HQ](https://app.tokenoftrust.com/hq):
+
 ```json
       {
        "APP_DOMAIN": "YOUR_APP_DOMAIN",
